@@ -42,6 +42,7 @@
   (add-to-list 'projectile-project-root-files "pyproject.toml"))
 
 ;;; lsp-mode setup
+(require-package 'lsp-mode)
 (use-package lsp-mode
   :demand t
   :config
@@ -81,6 +82,7 @@
   :hook
   ((python-mode . lsp)))
 
+(require-package 'lsp-ui)
 (use-package lsp-ui
   :config (setq lsp-ui-sideline-show-hover t
                 lsp-ui-sideline-delay 0.5
