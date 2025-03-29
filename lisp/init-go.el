@@ -6,6 +6,9 @@
 
 ;;; Code:
 
+(require-package 'go-mode)
+(require 'go-mode)
+
 (add-hook 'go-mode-hook 'eglot-ensure)
 
 (provide 'init-go)
