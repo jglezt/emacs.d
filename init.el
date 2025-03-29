@@ -153,6 +153,7 @@
 (require 'init-go)
 (require 'init-org-gtd)
 (require 'init-bibtex)
+(require 'init-org-brain)
 
 ;; Extra packages which don't require any configuration
 
