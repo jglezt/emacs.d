@@ -29,7 +29,6 @@
                (window-height . fit-window-to-buffer)))
 
 (require-package 'org-roam-bibtex)
-
 (use-package org-roam-bibtex
   :after org-roam
   :config
