@@ -150,6 +150,8 @@
 (require 'init-zig)
 (require 'init-terminals)
 (require 'init-org-roam)
+(require 'init-go)
+(require 'init-org-gtd)
 
 ;; Extra packages which don't require any configuration
 
@@ -201,3 +203,4 @@
 ;; no-byte-compile: t
 ;; End:
 ;;; init.el ends here
+(put 'dired-find-alternate-file 'disabled nil)
