@@ -12,9 +12,7 @@
  ;;; org-capture
 (setq org-capture-templates '(("t" "Todo [inbox]" entry
                                (file+headline "~/org/gtd/inbox.org" "Tasks")
-                               "* WAITING %i%? \n:PROPERTIES:\n:Created: %U\n:CATEGORY: %^{Category}\n:END:")
-                              ("b" "Brain" plain (function org-brain-goto-end)
-                               "* %i%?" :empty-lines 1)
+                               "* TODO %i%? \n:PROPERTIES:\n:Created: %U\n:CATEGORY: %^{Category}\n:END:")
                               ("T" "Tickler" entry
                                (file+headline "~/org/gtd/tickler.org" "Tickler")
                                "* %i%? \n %U")
@@ -84,7 +82,7 @@
 
 ;;; org-todo-keywords
 (setq org-todo-keywords
-      '((sequence "PROJECT(p!)" "WAITING(w!)" "TODO(t!)" "IN_PROGRESS(i!)" "ON_HOLD(h!)" "VERIFY(v!)" "|" "DONE(d!)" "DELEGATED(e@)" "CANCELLED(c@)")))
+      '((sequence "PROJECT(p!)" "TODO(t!)" "IN_PROGRESS(i!)" "ON_HOLD(h!)" "VERIFY(v!)" "|" "DONE(d!)" "DELEGATED(e@)" "CANCELLED(c@)")))
 
 ;;; ispell block skipps for ORG files
 (add-to-list 'ispell-skip-region-alist '(":\\(PROPERTIES\\|LOGBOOK\\):" . ":END:"))
