@@ -1,3 +1,13 @@
+;;; init-org-roam.el --- Zettelkasten -*- lexical-binding: t; -*-
+
+;;; Commentary:
+
+;;; Code:
+
+(require-package 'org-ref)
+(use-package org-ref)
+
+(require-package 'org-roam)
 (use-package org-roam
   :ensure t
   :custom
@@ -35,3 +45,4 @@
   (require 'org-ref)) ; optional: if using Org-ref v2 or v3 citation links
 
 (provide 'init-org-roam)
+;;; init-org-roam.el ends here
