@@ -155,6 +155,7 @@
 (require 'init-bibtex)
 (require 'init-org-brain)
 (require 'init-scala)
+(require 'init-java)
 
 ;; Extra packages which don't require any configuration
 
