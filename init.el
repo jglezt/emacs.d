@@ -148,7 +148,6 @@
 (require 'init-go)
 (require 'init-lua)
 (require 'init-uiua)
-(require 'init-zig)
 (require 'init-terminals)
 (require 'init-org-roam)
 (require 'init-go)
@@ -156,6 +155,7 @@
 (require 'init-bibtex)
 (require 'init-org-brain)
 (require 'init-scala)
+(require 'init-agent)
 
 ;; Extra packages which don't require any configuration
 
