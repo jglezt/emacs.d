@@ -10,7 +10,7 @@
 
 (maybe-require-package 'github-clone)
 (maybe-require-package 'forge)
-(maybe-require-package 'github-review)
+(maybe-require-package 'pr-review)
 
 (when (maybe-require-package 'flymake-actionlint)
   (add-hook 'yaml-mode-hook 'flymake-actionlint-action-load-when-actions-file))

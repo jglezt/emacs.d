@@ -2,6 +2,9 @@
 
 ;;; Commentary:
 ;;; Taken from https://olafurpg.github.io/metals/docs/editors/emacs.html#eglot
+;;; The most common issue when compiling a new Scala library is the lack
+;;; of compatibility with metals.  The most easy fix is to upgrade the used
+;;; Scala version to the oldest one that metals can support.
 
 ;;; Code:
 
@@ -9,22 +12,11 @@
 (use-package scala-mode
   :mode "\\.s\\(cala\\|bt\\)$")
 
-
-(require-package 'sbt-mode)
-(use-package sbt-mode
-  :commands sbt-start sbt-command
-  :config
-  ;; WORKAROUND: https://github.com/ensime/emacs-sbt-mode/issues/31
-  ;; allows using SPACE when in the minibuffer
-  (substitute-key-definition
-   'minibuffer-complete-word
-   'self-insert-command
-   minibuffer-local-completion-map))
-
-
 (with-eval-after-load 'eglot
   (add-to-list 'eglot-server-programs
-               '(scala-mode . ("metals-emacs"))))
+               `(scala-mode . ("metals" :initializationOptions
+                               (:preferredBuildServer "gradle"
+                                                      :enableSemanticHighlighting t)))))
 
 (with-eval-after-load 'scala-mode
   (add-hook 'scala-mode-hook 'eglot-ensure))

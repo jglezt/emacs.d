@@ -147,12 +147,12 @@
 
 ;;; Install kubernetes
 
-(use-package kubernetes
-  :ensure t
-  :commands (kubernetes-overview)
-  :config
-  (setq kubernetes-poll-frequency 3600
-        kubernetes-redraw-frequency 3600))
+;; (use-package kubernetes
+;;   :ensure t
+;;   :commands (kubernetes-overview)
+;;   :config
+;;   (setq kubernetes-poll-frequency 3600
+;;         kubernetes-redraw-frequency 3600))
 
 
 (add-to-list 'image-types 'svg)
