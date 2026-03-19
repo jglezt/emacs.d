@@ -11,5 +11,14 @@
   (setq agent-shell-anthropic-claude-environment
         (agent-shell-make-environment-variables :inherit-env t)))
 
+;;; Manually installed through adding a git repository.
+(require 'agent-review)
+
+(use-package agent-shell-workspace
+  :vc (:url "https://github.com/gveres/agent-shell-workspace")
+  :ensure t
+  :after agent-shell
+  :bind (:map agent-shell-mode-map ("C-w" . agent-shell-workspace-toggle)))
+
 (provide 'init-agent)
 ;;; init-agent.el ends here
