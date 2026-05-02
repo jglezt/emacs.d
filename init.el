@@ -150,6 +150,7 @@
 (require 'init-uiua)
 (require 'init-zig)
 (require 'init-terminals)
+(require 'init-org-roam)
 
 ;; Extra packages which don't require any configuration
 
