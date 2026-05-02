@@ -59,6 +59,7 @@ site-lisp/package/
 /.dap-breakpoints
 /forge-*.sqlite
 /projectile.cache
+/.dap-breakpoints
 /lisp/init-local.el
 /org-roam.db
 /hackernews/

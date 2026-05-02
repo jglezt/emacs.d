@@ -380,6 +380,5 @@ typical word processor."
      (sql . t)
      (sqlite . t))))
 
-
 (provide 'init-org)
 ;;; init-org.el ends here
