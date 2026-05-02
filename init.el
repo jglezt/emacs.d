@@ -155,6 +155,7 @@
 (require 'init-org-brain)
 (require 'init-scala)
 (require 'init-agent)
+(require 'init-racket)
 
 ;; Extra packages which don't require any configuration
 
