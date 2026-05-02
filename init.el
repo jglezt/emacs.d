@@ -122,6 +122,7 @@
 (require 'init-docker)
 (require 'init-terraform)
 (require 'init-nix)
+(require 'init-scala)
 (maybe-require-package 'nginx-mode)
 (maybe-require-package 'just-mode)
 (when (maybe-require-package 'just-ts-mode)
