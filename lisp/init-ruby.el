@@ -65,7 +65,6 @@
 (require-package 'yari)
 (defalias 'ri 'yari)
 
-
 
 (when (maybe-require-package 'yard-mode)
   (add-hook 'ruby-mode-hook 'yard-mode)
