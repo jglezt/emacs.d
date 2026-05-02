@@ -6,9 +6,6 @@
 ;; work seamlessly with Emacs:
 ;; https://gist.github.com/purcell/81f76c50a42eee710dcfc9a14bfc7240
 
-;;; Plus: Great article to initialize any virtualenv with lsp
-;;; https://www.mattduck.com/lsp-python-getting-started.html
-
 (setq auto-mode-alist
       (append '(("SConstruct\\'" . python-mode)
                 ("SConscript\\'" . python-mode))
