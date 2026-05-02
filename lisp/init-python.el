@@ -78,7 +78,22 @@
      lsp-imenu-sort-methods '(position kind name)
      lsp-signature-auto-activate t
      lsp-signature-render-documentation t
+<<<<<<< HEAD
      lsp-signature-doc-lines 10))
+=======
+     lsp-signature-doc-lines 10)
+    (lsp-register-custom-settings
+     '(("pyls.plugins.pyls_mypy.enabled" t t)
+       ("pyls.plugins.pyls_mypy.live_mode" nil t)
+       ("pyls.plugins.pyls_black.enabled" t t)
+       ("pyls.plugins.pyls_isort.enabled" t t)
+
+       ;; Disable these as they're duplicated by flake8
+       ("pyls.plugins.pycodestyle.enabled" nil t)
+       ("pyls.plugins.mccabe.enabled" nil t)
+       ("pyls.plugins.pyflakes.enabled" nil t))))
+
+>>>>>>> 46ab22e3 (Add LSP Python configuration)
   :hook
   ((python-mode . lsp)))
 
